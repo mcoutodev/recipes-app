@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+    .home-container h1 {
+        @apply font-bold text-center p-4 text-5xl text-green-500 italic;
+    }
+
+    .home-container div {
+        @apply flex flex-col items-center relative h-4/5;
+    }
+
+    .home-container img {
+        @apply h-full object-cover;
+    }
+
+    .home-container button {
+        @apply bg-green-500 text-white font-bold py-2 px-4 rounded-full text-2xl w-60 absolute bottom-8;
+    }
+}
