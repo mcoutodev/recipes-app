@@ -1,3 +1,4 @@
+import Arrow from '@/app/components/svg/Arrow';
 import React from 'react';
 
 export default function Login() {
@@ -14,7 +15,10 @@ export default function Login() {
                         <input type="email" name="email" id="email" />
                         <label htmlFor="password">Senha</label>
                         <input type="password" name="password" id="password" />
-                        <button type="submit">Login</button>
+                        <button type="submit">
+                            Login
+                            <Arrow />
+                        </button>
                     </form>
                 </section>
             </main>
