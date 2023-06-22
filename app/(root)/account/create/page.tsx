@@ -1,5 +1,5 @@
-import Arrow from '@/app/components/svg/Arrow';
 import React from 'react';
+import { ArrowRightIcon } from '@/app/components/svg';
 import './create.css';
 
 export default function Create() {
@@ -22,7 +22,7 @@ export default function Create() {
                         <input type="password" name="confirmation" id="confirmation" />
                         <button type="submit">
                             Crie uma conta
-                            <Arrow />
+                            <ArrowRightIcon />
                         </button>
                     </form>
                 </section>

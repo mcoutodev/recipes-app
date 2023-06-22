@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
 
 export default function Home() {
     return (
@@ -7,7 +7,7 @@ export default function Home() {
             <main className='home-container'>
                 <h1>Recipes App</h1>
                 <div>
-                    <Image src={'https://dummyimage.com/443x665.jpg'} alt='' width={443} height={665} />
+                    <Image src={'/assets/pasta.jpg'} alt='' width={443} height={665} />
                     <button>Começar</button>
                 </div>
             </main>
