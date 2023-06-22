@@ -1,5 +1,5 @@
-import Arrow from '@/app/components/svg/Arrow';
 import React from 'react';
+import { ArrowRightIcon } from '@/app/components/svg';
 
 export default function Login() {
     return (
@@ -17,7 +17,7 @@ export default function Login() {
                         <input type="password" name="password" id="password" />
                         <button type="submit">
                             Login
-                            <Arrow />
+                            <ArrowRightIcon />
                         </button>
                     </form>
                 </section>
