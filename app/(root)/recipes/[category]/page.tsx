@@ -1,12 +1,14 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import { recipes } from '../../../components/recipes/recipes'
 import RecipesCard from '@/app/components/recipes/RecipesCard'
-import NotFound from '../../notfound/page'
 
 export default function Page({ params }: any) {
+    const router = useRouter()
 
     if (params.category !== 'meals' && params.category !== 'drinks') {
-        return ( <NotFound /> )
-    }
+        router.push('/notfound')
+   }
 
     return (
         <div>
