@@ -13,18 +13,20 @@ export default function Page({ params }: any) {
     return (
         <div>
             <div>
-                <button type="button">button</button>
-                <input type="" name="name" value="Digite o nome da comida" />
+                <input type="" name="name" value="" placeholder='Digite o nome da comida' />
+                <input type="" name="ingredient" value="" placeholder='Digite o ingrediente' />
                 <select>
                     {recipes.map((recipe) => (
                         <option key={recipe.id} value={recipe.category}>{recipe.category}</option>
                     ))}
                 </select>
-
                 <select>
-                    <option value=""></option>,
-                    <option value=""></option>,
+                    {recipes.map((recipe) => (
+                        <option key={recipe.id} value={recipe.area}>{recipe.area}</option>
+                    ))}
                 </select>
+                <button type="button">search</button>
+
             </div>
             <div>
                 espaço dos cards
